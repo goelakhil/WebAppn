@@ -10,9 +10,11 @@ namespace WebAppn.Controllers
 	[ApiController]
 	public class ProductsController : Controller
     {
+		
 		[HttpGet]
 		public ActionResult<IEnumerable<string>> Get()
 		{
+			var str = "äbd";
 			return new string[] { "p1", "p2", "p3" };
 		}
 	}
