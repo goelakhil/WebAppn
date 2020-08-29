@@ -2,5 +2,24 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/WebAppn/v15/Server/sqlite3/db.lock
-/.vs/WebAppn/v15/Server/sqlite3
+# Gradle files
+.gradle/
+.classpath
+.project
+.settings/
+bin/
+
+# Build output
+build/
+.sonar
+target/
+bw-outputs/
+.scannerwork
+
+# IntelliJ
+
+.idea
+*.iml
+
+# mac
+.DS_Store
