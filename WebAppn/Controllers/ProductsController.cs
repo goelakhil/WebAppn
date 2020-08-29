@@ -15,7 +15,16 @@ namespace WebAppn.Controllers
 		public ActionResult<IEnumerable<string>> Get()
 		{
 			var str = "äbd";
-			return new string[] { "p1", "p2", "p3" };
+			double a = 4.5; // or use var 
+			double b = 2.5;
+			double answer = Add(a, b);
+			return new string[] { ($"{a} + {b} = {answer}") };
+			//return new string[] { "p1", "p2", "p3" };
+		}
+
+		static double Add(double a, double b)
+		{
+			return a * b; // deliberate bug! 
 		}
 	}
 }
